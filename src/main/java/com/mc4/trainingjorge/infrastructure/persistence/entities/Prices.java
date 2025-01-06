@@ -3,9 +3,8 @@ package com.mc4.trainingjorge.infrastructure.persistence.entities;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.util.Date;
 
 /*
  *----------------------------------------
@@ -28,10 +27,10 @@ public class Prices {
     private Short id;
 
     @Column
-    private LocalDate startDate;
+    private Date startDate;
 
     @Column
-    private LocalDate endDate;
+    private Date endDate;
 
     @Column
     private Integer priceList;

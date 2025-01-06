@@ -3,7 +3,6 @@ package com.mc4.trainingjorge.infrastructure.web.controllers.dto.request;
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.Date;
 
 /*
@@ -19,8 +18,8 @@ import java.util.Date;
  */
 @Data
 public class PricesRequestDto {
-    private LocalDate startDate;
-    private LocalDate endDate;
+    private Date startDate;
+    private Date endDate;
     private Integer priceList;
     private BigDecimal price;
     private Integer priority;

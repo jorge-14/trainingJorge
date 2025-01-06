@@ -1,7 +1,7 @@
-package com.mc4.trainingjorge.domain.model;
+package com.mc4.trainingjorge.infrastructure.web.controllers.dto.response;
 
 import lombok.Data;
-import java.math.BigDecimal;
+
 import java.util.Date;
 
 /*
@@ -12,19 +12,16 @@ import java.util.Date;
  *   Author Prog: Jorge Luis Choque Callizaya
  *----------------------------------------
  *   Fecha | Autor | Comentario
- *   30.12.2024 | Jorge Luis Choque Callizaya | Creación Inicial
+ *   05.01.2025 | Jorge Luis Choque Callizaya | Creación Inicial
  *----------------------------------------
  */
 @Data
-public class PricesModel {
-
-    private Short id;
+public class FilterByDateResponseDto {
+    private Short brandId;
     private Date startDate;
     private Date endDate;
     private Integer priceList;
-    private BigDecimal price;
-    private Integer priority;
-    private String curr;
-    private Short brandId;
     private Short productId;
+    private Double price;
+    private String curr;
 }
